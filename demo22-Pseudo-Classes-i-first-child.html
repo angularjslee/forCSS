@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        /*匹配第一个 <p> 元素*/
+        p:first-child
+        {
+            color:blue;
+        }
+        /*匹配所有<p> 元素中的第一个 <i> 元素*/
+        p > i:first-child
+        {
+            color:red;
+        }
+        /*匹配所有作为第一个子元素的 <p> 元素中的所有 <i> 元素*/
+        p:first-child i
+        {
+            color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<hr>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<hr>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+<p>I am a <i>strong</i> man. I am a <i>strong</i> man.</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+    <style>
+        /*后代选择器(以空格分隔)*/
+        /*后代选择器用于选取某元素的后代元素*/
+        div p
+        {
+            background-color:yellow;
+        }
+        /*子元素选择器(以大于号分隔*/
+        div>p
+        {
+            background-color:green;
+        }
+        /*普通兄弟选择器（以破折号分隔）*/
+        /*后续兄弟选择器选取所有指定元素之后的相邻兄弟元素。*/
+        div~P
+        {
+            background-color:blue;
+        }
+        /*相邻兄弟选择器（以加号分隔*/
+        /*相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。*/
+        div+p
+        {
+            background-color:red;
+        }
+
+    </style>
+</head>
+<body>
+<h3>后代</h3>
+<div>
+    <p>段落 1。 在 div 中。</p>
+    <p>段落 2。 在 div 中。</p>
+</div>
+<p>段落 3。不在 div 中。</p>
+<p>段落 4。不在 div 中。</p>
+<hr>
+<h3>子代</h3>
+<div>
+    <h4>My name is Donald</h4>
+    <p>I live in Duckburg.</p>
+</div>
+<p>a</p>
+<div>
+    <span><p>I will not be styled.</p></span>
+</div>
+<p>B</p>
+<p>My best friend is Mickey.</p>
+
+<p>My best friend is Dog.</p>
+<hr>
+    <h3>普通兄弟</h3>
+<div>
+    <p>段落 1。 在 div 中。</p>
+    <p>段落 2。 在 div 中。</p>
+</div>
+<p>段落 3。不在 div 中。</p>
+<p>段落 4。不在 div 中。</p>
+<hr>
+<h3>相邻兄弟</h3>
+<div>
+    <h2>DIV 内部标题</h2>
+    <p>DIV 内部段落。</p>
+</div>
+<p>DIV 之后的第一个 P 元素。</p>
+<p>DIV 之后的第二个 P 元素。</p>
+
+</body>
+</html>
